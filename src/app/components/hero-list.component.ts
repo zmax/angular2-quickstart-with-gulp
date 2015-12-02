@@ -1,4 +1,3 @@
-// import {Component, CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/angular2';
 import {Component, NgClass, NgFor, NgIf, Input} from 'angular2/angular2';
 import {Hero} from '../models/hero';
 import {HeroEditor} from './hero-editor.component';
@@ -8,7 +7,6 @@ import {HeroService} from '../services/hero.service';
     selector: 'hero-list',
     templateUrl: 'templates/hero-list.html',
     providers: [HeroService],
-    // directives: [CORE_DIRECTIVES, FORM_DIRECTIVES, HeroEditor],
     directives: [NgClass, NgFor, NgIf, HeroEditor],
     styles:[`
       .heroes {list-style-type: none; margin-left: 1em; padding: 0; width: 100%;}
@@ -28,20 +26,16 @@ import {HeroService} from '../services/hero.service';
     `]
 })
 export class HeroList {
-    // public heroes: Hero[];
+
     @Input() public heroes: Hero[];
     public selectedHero: Hero;
 
-    // constructor(private _heroService: HeroService) {
-    //     this.heroes = _heroService.getHeroes();
-    // }
-
     onSelect(hero: Hero) {
         this.selectedHero = hero;
-        // console.log(hero);
     }
 
     getSelectedClass(hero: Hero) {
         return { 'selected' : hero === this.selectedHero };
     }
+
 }

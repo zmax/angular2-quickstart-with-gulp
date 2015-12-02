@@ -9,7 +9,6 @@ import {Hero} from '../models/hero';
     templateUrl: 'templates/app.html',
     directives: [NgClass, NgFor, NgIf, HeroList],
     providers: [HeroService],
-    // directives: [CORE_DIRECTIVES, HeroList],
 })
 
 export class AppComponent {
