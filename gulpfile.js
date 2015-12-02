@@ -45,7 +45,7 @@ gulp.task("watch", function() {
 
     gulp.watch(['src/**/*.ts'], ['js']);
     gulp.watch(['templates/**/*.html'], ['html']);
-    gulp.watch(['src/**/*.ts', 'templtes/**/*.html'], function (file) {
+    gulp.watch(['src/**/*.ts', './**/*.html'], function (file) {
         server.notify.apply(server, [file]);
     });
 });
