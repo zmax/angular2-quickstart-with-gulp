@@ -1,8 +1,8 @@
 {
-  "name": "angular2-quickstart",
+  "name": "angular2-with-gulp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
     "tsc": "tsc -p src -w",
     "start": "live-server --open=./ --port=9000",
@@ -17,7 +17,15 @@
     "systemjs": "0.19.6"
   },
   "devDependencies": {
+    "del": "^2.1.0",
+    "es6-module-loader": "^0.17.8",
+    "gulp": "^3.8.11",
+    "gulp-live-server": "0.0.29",
+    "gulp-rename": "^1.2.2",
+    "gulp-typescript": "^2.6.0",
+    "gulp-watch": "^4.3.5",
     "live-server": "^0.8.2",
+    "traceur": "0.0.93",
     "typescript": "^1.7.3"
   }
 }
