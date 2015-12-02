@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc -p src -w",
-    "start": "live-server --open=src",
+    "start": "live-server --open=./ --port=9000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "angular2": "2.0.0-alpha.46",
+    "angular2": "2.0.0-alpha.47",
     "es6-shim": "^0.33.13",
     "systemjs": "0.19.6"
   },
