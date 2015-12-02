@@ -1,5 +1,5 @@
 {
-  "name": "angular2-with-gulp",
+  "name": "angular2-quickstart-with-gulp",
   "version": "1.0.0",
   "description": "",
   "main": "dist/app.js",
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "angular2": "2.0.0-alpha.47",
+    "bootstrap": "^3.3.6",
     "es6-shim": "^0.33.13",
     "systemjs": "0.19.6"
   },
